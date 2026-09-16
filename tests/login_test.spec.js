@@ -1,6 +1,6 @@
 import {test,expect } from '@playwright/test'
 
-test('DEMO Login Test',async({page})=>{
+test.only('DEMO Login Test',async({page})=>{
     await page.goto("https://demo.applitools.com/")
     await page.pause();
     await page.getByRole('textbox', { name: 'Enter your username' }).fill('Vishak')
@@ -21,6 +21,6 @@ test("DEMO Login TEST 2",async({page})=>{
     await page.getByRole('menuitem', { name: 'Logout' }).click();
 })
 
-test.only("DEMO Login Test 3",async({page})=>{
+test("DEMO Login Test 3",async({page})=>{
     await page.pause()
 })

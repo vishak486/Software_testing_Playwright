@@ -33,7 +33,9 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
+    // video:'on',
     launchOptions: {
+      // slowMo:1000,
       timeout: 60000, // 60 seconds to launch
     }, 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
